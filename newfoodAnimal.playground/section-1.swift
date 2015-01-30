@@ -65,7 +65,7 @@ class namePet {
 
 //let name=namePet()
 //name.pet("cat")
-////////////////////////
-let start = namePet(user: "cow")
+//\\//////////////////////
+let start = namePet(user: "cowxxxxx")
 start.call()
 start.pet2("dog")
