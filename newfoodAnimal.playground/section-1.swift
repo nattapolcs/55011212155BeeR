@@ -44,6 +44,22 @@ class namePet {
         }
     return ans
     }
+    ////////////////////////////////
+    func pet2(name : String){
+        
+        var petname = ["dog","cat","ant"]
+        var foodpet = ["ตับ","ปลา","น้ำหวาน"]
+        var index=0
+        for(var i=0;i<petname.count;i++){
+            if(name==petname[i]){
+                index=i
+                break
+            }
+            
+        }
+        println("\(name) eat \(foodpet[index])")
+        
+    }
     
 }
 
@@ -52,3 +68,4 @@ class namePet {
 ////////////////////////
 let start = namePet(user: "cow")
 start.call()
+start.pet2("dog")
