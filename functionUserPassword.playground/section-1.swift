@@ -69,8 +69,8 @@ class idpass {
 
 let start = idpass(user: "Beer",pass: "55555")
 //start.add("tttt",pass :"123456")
-start.update("5555", userchang: "Beer")
-start.ser("Beer")
+//start.update("5555", userchang: "Beer")
+//start.ser("Beer")
 //start.delet("Beer")
 
 

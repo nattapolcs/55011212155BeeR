@@ -22,7 +22,6 @@ class namePet {
      
     }
 
-    
     let pet : Dictionary<String,String> = ["Ant":"น้ำหวาน","Cow":"หญ้า","Dog":"กระดูก"]
     let input:String
     
@@ -40,8 +39,8 @@ class namePet {
         }
         return ans
     }
-
 }
+
 
 //let names=namePet()
 //names.pet("cat")
