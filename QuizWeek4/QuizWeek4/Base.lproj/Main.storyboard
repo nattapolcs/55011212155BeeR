@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="QuizWeek4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAY-7c-RI5">
+                                <rect key="frame" x="40" y="70" width="61" height="58"/>
+                                <state key="normal" title="one" image="2000px-Number_1_in_green_rounded_square.svg.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.44616162388922836" blue="0.28081495509659693" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fPB-Ip-Okz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v42-aV-eaI">
+                                <rect key="frame" x="157" y="70" width="61" height="60"/>
+                                <state key="normal" title="two" image="blue-rounded-square-with-number-2-hi.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTwo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tEX-R5-XYI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-z0-sLe">
+                                <rect key="frame" x="286" y="68" width="61" height="63"/>
+                                <state key="normal" title="three" image="Number 3 Violet.png">
+                                    <color key="titleShadowColor" red="0.23187777164809181" green="0.5" blue="0.10776250731626663" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionThree:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8DH-7F-6Oi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYu-Cl-8mI">
+                                <rect key="frame" x="48" y="153" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwF-il-8Nz">
+                                <rect key="frame" x="164" y="153" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhP-Pf-ckw">
+                                <rect key="frame" x="149" y="191" width="73" height="30"/>
+                                <state key="normal" title="Reset All">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionReset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="itB-Qd-0sr"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QiJ-uO-0T2">
+                                <rect key="frame" x="0.0" y="13" width="375" height="44"/>
+                                <color key="barTintColor" red="1" green="0.8890902471275951" blue="0.25772742049828856" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Wleek4" id="QNZ-VG-zR5"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="karting-calculator.png" translatesAutoresizingMaskIntoConstraints="NO" id="Spg-6e-Tdk">
+                                <rect key="frame" x="65" y="244" width="240" height="279"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="faf-0j-Ym5">
+                                <rect key="frame" x="-2" y="590" width="375" height="44"/>
+                                <color key="barTintColor" red="0.88229955808080807" green="0.7986592906800869" blue="0.10012661336497093" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.34115027924133617" green="0.88229955808080807" blue="0.15507364609622318" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" red="0.5761926522770755" green="0.88229955808080807" blue="0.36703691667083149" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="CS#18" id="5h5-6P-73H"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calculator-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="xyj-Je-XbE">
+                                <rect key="frame" x="0.0" y="13" width="70" height="44"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calculator-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="c2W-Da-pc8">
+                                <rect key="frame" x="303" y="13" width="70" height="44"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pd-Ol-FrI">
+                                <rect key="frame" x="295" y="153" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69731902333768525" green="0.88229955808080807" blue="0.49120303056186909" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lableOne" destination="kYu-Cl-8mI" id="XBo-JB-3qY"/>
+                        <outlet property="lableThree" destination="1Pd-Ol-FrI" id="KWj-V3-a37"/>
+                        <outlet property="lableTwo" destination="zwF-il-8Nz" id="nmO-Ga-MZY"/>
+                        <outlet property="one" destination="KAY-7c-RI5" id="bpV-1S-ylc"/>
+                        <outlet property="reset" destination="PhP-Pf-ckw" id="HPC-EA-GUW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.5" y="322.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2000px-Number_1_in_green_rounded_square.svg.png" width="2000" height="2000"/>
+        <image name="Number 3 Violet.png" width="300" height="300"/>
+        <image name="blue-rounded-square-with-number-2-hi.png" width="600" height="600"/>
+        <image name="calculator-icon.png" width="256" height="256"/>
+        <image name="karting-calculator.png" width="237" height="227"/>
+    </resources>
+</document>
