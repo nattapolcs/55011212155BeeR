@@ -55,16 +55,15 @@
                                     <navigationItem title="Tip Caculator" id="a03-vh-8G8"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y3d-5F-hB0">
-                                <rect key="frame" x="73" y="196" width="228" height="259"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VlE-t6-DF4">
+                                <rect key="frame" x="36" y="196" width="320" height="230"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Tw6-Q5-Q0l"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="eAb-KR-Guq"/>
-                                </connections>
-                            </tableView>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Navi-Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o4d-w0-ufI">
-                                <rect key="frame" x="67" y="480" width="240" height="128"/>
+                                <rect key="frame" x="76" y="434" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -75,7 +74,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="tablesView" destination="Y3d-5F-hB0" id="UeW-m8-kpp"/>
+                        <outlet property="resultsTextView" destination="VlE-t6-DF4" id="5VT-bD-03j"/>
                         <outlet property="taxPctLable" destination="iZv-wI-fXp" id="rYF-db-v6B"/>
                         <outlet property="taxPctSlider" destination="bt6-ca-ouf" id="nQ6-U9-lYg"/>
                         <outlet property="totalTextField" destination="SQm-WU-MmY" id="8Yq-Yx-zsi"/>

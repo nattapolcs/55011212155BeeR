@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDB403A91A8DD4DB00D33C70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB403A81A8DD4DB00D33C70 /* AppDelegate.swift */; };
+		FDB403AB1A8DD4DB00D33C70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB403AA1A8DD4DB00D33C70 /* ViewController.swift */; };
+		FDB403AE1A8DD4DB00D33C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB403AC1A8DD4DB00D33C70 /* Main.storyboard */; };
+		FDB403B01A8DD4DB00D33C70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB403AF1A8DD4DB00D33C70 /* Images.xcassets */; };
+		FDB403B31A8DD4DB00D33C70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB403B11A8DD4DB00D33C70 /* LaunchScreen.xib */; };
+		FDB403BF1A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB403BE1A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests.swift */; };
+		FDB403DF1A8DD99400D33C70 /* bicycle12.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403C81A8DD99400D33C70 /* bicycle12.png */; };
+		FDB403E01A8DD99400D33C70 /* bus28.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403C91A8DD99400D33C70 /* bus28.png */; };
+		FDB403E11A8DD99400D33C70 /* car93.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403CA1A8DD99400D33C70 /* car93.png */; };
+		FDB403E21A8DD99400D33C70 /* car94.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403CB1A8DD99400D33C70 /* car94.png */; };
+		FDB403E31A8DD99400D33C70 /* car95.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403CC1A8DD99400D33C70 /* car95.png */; };
+		FDB403E41A8DD99400D33C70 /* convertible2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403CD1A8DD99400D33C70 /* convertible2.png */; };
+		FDB403E51A8DD99400D33C70 /* garage11.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403CE1A8DD99400D33C70 /* garage11.png */; };
+		FDB403E61A8DD99400D33C70 /* motorcycle10.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403CF1A8DD99400D33C70 /* motorcycle10.png */; };
+		FDB403E71A8DD99400D33C70 /* pickup.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D01A8DD99400D33C70 /* pickup.png */; };
+		FDB403E81A8DD99400D33C70 /* scooter7.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D11A8DD99400D33C70 /* scooter7.png */; };
+		FDB403E91A8DD99400D33C70 /* sedan2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D21A8DD99400D33C70 /* sedan2.png */; };
+		FDB403EA1A8DD99400D33C70 /* semaphore5.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D31A8DD99400D33C70 /* semaphore5.png */; };
+		FDB403EB1A8DD99400D33C70 /* suv.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D41A8DD99400D33C70 /* suv.png */; };
+		FDB403EC1A8DD99400D33C70 /* taxi13.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D51A8DD99400D33C70 /* taxi13.png */; };
+		FDB403ED1A8DD99400D33C70 /* tow.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D61A8DD99400D33C70 /* tow.png */; };
+		FDB403EE1A8DD99400D33C70 /* tractor4.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D71A8DD99400D33C70 /* tractor4.png */; };
+		FDB403EF1A8DD99400D33C70 /* traffic17.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D81A8DD99400D33C70 /* traffic17.png */; };
+		FDB403F01A8DD99400D33C70 /* trailer3.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403D91A8DD99400D33C70 /* trailer3.png */; };
+		FDB403F11A8DD99400D33C70 /* train22.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403DA1A8DD99400D33C70 /* train22.png */; };
+		FDB403F21A8DD99400D33C70 /* train23.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403DB1A8DD99400D33C70 /* train23.png */; };
+		FDB403F31A8DD99400D33C70 /* tram4.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403DC1A8DD99400D33C70 /* tram4.png */; };
+		FDB403F41A8DD99400D33C70 /* trolleybus.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403DD1A8DD99400D33C70 /* trolleybus.png */; };
+		FDB403F51A8DD99400D33C70 /* truck31.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB403DE1A8DD99400D33C70 /* truck31.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDB403B91A8DD4DB00D33C70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB4039B1A8DD4DB00D33C70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB403A21A8DD4DB00D33C70;
+			remoteInfo = IOS8SwiftPrototypeCellTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDB403A31A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS8SwiftPrototypeCellTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB403A71A8DD4DB00D33C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB403A81A8DD4DB00D33C70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDB403AA1A8DD4DB00D33C70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDB403AD1A8DD4DB00D33C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDB403AF1A8DD4DB00D33C70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDB403B21A8DD4DB00D33C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FDB403B81A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS8SwiftPrototypeCellTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB403BD1A8DD4DB00D33C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB403BE1A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS8SwiftPrototypeCellTutorialTests.swift; sourceTree = "<group>"; };
+		FDB403C81A8DD99400D33C70 /* bicycle12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bicycle12.png; sourceTree = "<group>"; };
+		FDB403C91A8DD99400D33C70 /* bus28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus28.png; sourceTree = "<group>"; };
+		FDB403CA1A8DD99400D33C70 /* car93.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car93.png; sourceTree = "<group>"; };
+		FDB403CB1A8DD99400D33C70 /* car94.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car94.png; sourceTree = "<group>"; };
+		FDB403CC1A8DD99400D33C70 /* car95.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car95.png; sourceTree = "<group>"; };
+		FDB403CD1A8DD99400D33C70 /* convertible2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = convertible2.png; sourceTree = "<group>"; };
+		FDB403CE1A8DD99400D33C70 /* garage11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garage11.png; sourceTree = "<group>"; };
+		FDB403CF1A8DD99400D33C70 /* motorcycle10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = motorcycle10.png; sourceTree = "<group>"; };
+		FDB403D01A8DD99400D33C70 /* pickup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickup.png; sourceTree = "<group>"; };
+		FDB403D11A8DD99400D33C70 /* scooter7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scooter7.png; sourceTree = "<group>"; };
+		FDB403D21A8DD99400D33C70 /* sedan2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sedan2.png; sourceTree = "<group>"; };
+		FDB403D31A8DD99400D33C70 /* semaphore5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = semaphore5.png; sourceTree = "<group>"; };
+		FDB403D41A8DD99400D33C70 /* suv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suv.png; sourceTree = "<group>"; };
+		FDB403D51A8DD99400D33C70 /* taxi13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taxi13.png; sourceTree = "<group>"; };
+		FDB403D61A8DD99400D33C70 /* tow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tow.png; sourceTree = "<group>"; };
+		FDB403D71A8DD99400D33C70 /* tractor4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tractor4.png; sourceTree = "<group>"; };
+		FDB403D81A8DD99400D33C70 /* traffic17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = traffic17.png; sourceTree = "<group>"; };
+		FDB403D91A8DD99400D33C70 /* trailer3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trailer3.png; sourceTree = "<group>"; };
+		FDB403DA1A8DD99400D33C70 /* train22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train22.png; sourceTree = "<group>"; };
+		FDB403DB1A8DD99400D33C70 /* train23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train23.png; sourceTree = "<group>"; };
+		FDB403DC1A8DD99400D33C70 /* tram4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tram4.png; sourceTree = "<group>"; };
+		FDB403DD1A8DD99400D33C70 /* trolleybus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trolleybus.png; sourceTree = "<group>"; };
+		FDB403DE1A8DD99400D33C70 /* truck31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truck31.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB403A01A8DD4DB00D33C70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB403B51A8DD4DB00D33C70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDB4039A1A8DD4DB00D33C70 = {
+			isa = PBXGroup;
+			children = (
+				FDB403A51A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorial */,
+				FDB403BB1A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests */,
+				FDB403A41A8DD4DB00D33C70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDB403A41A8DD4DB00D33C70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDB403A31A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorial.app */,
+				FDB403B81A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDB403A51A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				FDB403A81A8DD4DB00D33C70 /* AppDelegate.swift */,
+				FDB403AA1A8DD4DB00D33C70 /* ViewController.swift */,
+				FDB403AC1A8DD4DB00D33C70 /* Main.storyboard */,
+				FDB403AF1A8DD4DB00D33C70 /* Images.xcassets */,
+				FDB403B11A8DD4DB00D33C70 /* LaunchScreen.xib */,
+				FDB403A61A8DD4DB00D33C70 /* Supporting Files */,
+			);
+			path = IOS8SwiftPrototypeCellTutorial;
+			sourceTree = "<group>";
+		};
+		FDB403A61A8DD4DB00D33C70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDB403C81A8DD99400D33C70 /* bicycle12.png */,
+				FDB403C91A8DD99400D33C70 /* bus28.png */,
+				FDB403CA1A8DD99400D33C70 /* car93.png */,
+				FDB403CB1A8DD99400D33C70 /* car94.png */,
+				FDB403CC1A8DD99400D33C70 /* car95.png */,
+				FDB403CD1A8DD99400D33C70 /* convertible2.png */,
+				FDB403CE1A8DD99400D33C70 /* garage11.png */,
+				FDB403CF1A8DD99400D33C70 /* motorcycle10.png */,
+				FDB403D01A8DD99400D33C70 /* pickup.png */,
+				FDB403D11A8DD99400D33C70 /* scooter7.png */,
+				FDB403D21A8DD99400D33C70 /* sedan2.png */,
+				FDB403D31A8DD99400D33C70 /* semaphore5.png */,
+				FDB403D41A8DD99400D33C70 /* suv.png */,
+				FDB403D51A8DD99400D33C70 /* taxi13.png */,
+				FDB403D61A8DD99400D33C70 /* tow.png */,
+				FDB403D71A8DD99400D33C70 /* tractor4.png */,
+				FDB403D81A8DD99400D33C70 /* traffic17.png */,
+				FDB403D91A8DD99400D33C70 /* trailer3.png */,
+				FDB403DA1A8DD99400D33C70 /* train22.png */,
+				FDB403DB1A8DD99400D33C70 /* train23.png */,
+				FDB403DC1A8DD99400D33C70 /* tram4.png */,
+				FDB403DD1A8DD99400D33C70 /* trolleybus.png */,
+				FDB403DE1A8DD99400D33C70 /* truck31.png */,
+				FDB403A71A8DD4DB00D33C70 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDB403BB1A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB403BE1A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests.swift */,
+				FDB403BC1A8DD4DB00D33C70 /* Supporting Files */,
+			);
+			path = IOS8SwiftPrototypeCellTutorialTests;
+			sourceTree = "<group>";
+		};
+		FDB403BC1A8DD4DB00D33C70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDB403BD1A8DD4DB00D33C70 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDB403A21A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB403C21A8DD4DB00D33C70 /* Build configuration list for PBXNativeTarget "IOS8SwiftPrototypeCellTutorial" */;
+			buildPhases = (
+				FDB4039F1A8DD4DB00D33C70 /* Sources */,
+				FDB403A01A8DD4DB00D33C70 /* Frameworks */,
+				FDB403A11A8DD4DB00D33C70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOS8SwiftPrototypeCellTutorial;
+			productName = IOS8SwiftPrototypeCellTutorial;
+			productReference = FDB403A31A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDB403B71A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB403C51A8DD4DB00D33C70 /* Build configuration list for PBXNativeTarget "IOS8SwiftPrototypeCellTutorialTests" */;
+			buildPhases = (
+				FDB403B41A8DD4DB00D33C70 /* Sources */,
+				FDB403B51A8DD4DB00D33C70 /* Frameworks */,
+				FDB403B61A8DD4DB00D33C70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB403BA1A8DD4DB00D33C70 /* PBXTargetDependency */,
+			);
+			name = IOS8SwiftPrototypeCellTutorialTests;
+			productName = IOS8SwiftPrototypeCellTutorialTests;
+			productReference = FDB403B81A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDB4039B1A8DD4DB00D33C70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = iStudents;
+				TargetAttributes = {
+					FDB403A21A8DD4DB00D33C70 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					FDB403B71A8DD4DB00D33C70 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = FDB403A21A8DD4DB00D33C70;
+					};
+				};
+			};
+			buildConfigurationList = FDB4039E1A8DD4DB00D33C70 /* Build configuration list for PBXProject "IOS8SwiftPrototypeCellTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDB4039A1A8DD4DB00D33C70;
+			productRefGroup = FDB403A41A8DD4DB00D33C70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB403A21A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorial */,
+				FDB403B71A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDB403A11A8DD4DB00D33C70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB403ED1A8DD99400D33C70 /* tow.png in Resources */,
+				FDB403E31A8DD99400D33C70 /* car95.png in Resources */,
+				FDB403E61A8DD99400D33C70 /* motorcycle10.png in Resources */,
+				FDB403AE1A8DD4DB00D33C70 /* Main.storyboard in Resources */,
+				FDB403E51A8DD99400D33C70 /* garage11.png in Resources */,
+				FDB403E01A8DD99400D33C70 /* bus28.png in Resources */,
+				FDB403EC1A8DD99400D33C70 /* taxi13.png in Resources */,
+				FDB403F51A8DD99400D33C70 /* truck31.png in Resources */,
+				FDB403F41A8DD99400D33C70 /* trolleybus.png in Resources */,
+				FDB403B31A8DD4DB00D33C70 /* LaunchScreen.xib in Resources */,
+				FDB403E91A8DD99400D33C70 /* sedan2.png in Resources */,
+				FDB403E21A8DD99400D33C70 /* car94.png in Resources */,
+				FDB403EB1A8DD99400D33C70 /* suv.png in Resources */,
+				FDB403F21A8DD99400D33C70 /* train23.png in Resources */,
+				FDB403F01A8DD99400D33C70 /* trailer3.png in Resources */,
+				FDB403EF1A8DD99400D33C70 /* traffic17.png in Resources */,
+				FDB403DF1A8DD99400D33C70 /* bicycle12.png in Resources */,
+				FDB403E11A8DD99400D33C70 /* car93.png in Resources */,
+				FDB403E71A8DD99400D33C70 /* pickup.png in Resources */,
+				FDB403EE1A8DD99400D33C70 /* tractor4.png in Resources */,
+				FDB403E81A8DD99400D33C70 /* scooter7.png in Resources */,
+				FDB403F11A8DD99400D33C70 /* train22.png in Resources */,
+				FDB403F31A8DD99400D33C70 /* tram4.png in Resources */,
+				FDB403EA1A8DD99400D33C70 /* semaphore5.png in Resources */,
+				FDB403B01A8DD4DB00D33C70 /* Images.xcassets in Resources */,
+				FDB403E41A8DD99400D33C70 /* convertible2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB403B61A8DD4DB00D33C70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDB4039F1A8DD4DB00D33C70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB403AB1A8DD4DB00D33C70 /* ViewController.swift in Sources */,
+				FDB403A91A8DD4DB00D33C70 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB403B41A8DD4DB00D33C70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB403BF1A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDB403BA1A8DD4DB00D33C70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB403A21A8DD4DB00D33C70 /* IOS8SwiftPrototypeCellTutorial */;
+			targetProxy = FDB403B91A8DD4DB00D33C70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDB403AC1A8DD4DB00D33C70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB403AD1A8DD4DB00D33C70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDB403B11A8DD4DB00D33C70 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB403B21A8DD4DB00D33C70 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDB403C01A8DD4DB00D33C70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDB403C11A8DD4DB00D33C70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB403C31A8DD4DB00D33C70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IOS8SwiftPrototypeCellTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDB403C41A8DD4DB00D33C70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IOS8SwiftPrototypeCellTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDB403C61A8DD4DB00D33C70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IOS8SwiftPrototypeCellTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS8SwiftPrototypeCellTutorial.app/IOS8SwiftPrototypeCellTutorial";
+			};
+			name = Debug;
+		};
+		FDB403C71A8DD4DB00D33C70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IOS8SwiftPrototypeCellTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS8SwiftPrototypeCellTutorial.app/IOS8SwiftPrototypeCellTutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDB4039E1A8DD4DB00D33C70 /* Build configuration list for PBXProject "IOS8SwiftPrototypeCellTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB403C01A8DD4DB00D33C70 /* Debug */,
+				FDB403C11A8DD4DB00D33C70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB403C21A8DD4DB00D33C70 /* Build configuration list for PBXNativeTarget "IOS8SwiftPrototypeCellTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB403C31A8DD4DB00D33C70 /* Debug */,
+				FDB403C41A8DD4DB00D33C70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDB403C51A8DD4DB00D33C70 /* Build configuration list for PBXNativeTarget "IOS8SwiftPrototypeCellTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB403C61A8DD4DB00D33C70 /* Debug */,
+				FDB403C71A8DD4DB00D33C70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDB4039B1A8DD4DB00D33C70 /* Project object */;
+}
