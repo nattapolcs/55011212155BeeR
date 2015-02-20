@@ -13,7 +13,8 @@
 		FDB26C061A97124800E101E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB26C051A97124800E101E1 /* Images.xcassets */; };
 		FDB26C091A97124800E101E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB26C071A97124800E101E1 /* LaunchScreen.xib */; };
 		FDB26C151A97124800E101E1 /* CoreImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB26C141A97124800E101E1 /* CoreImageViewTests.swift */; };
-		FDB26C1F1A972CBE00E101E1 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB26C1E1A972CBE00E101E1 /* image.jpg */; };
+		FDB26C1F1A972CBE00E101E1 /* image222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB26C1E1A972CBE00E101E1 /* image222.jpg */; };
+		FDB26C211A97359700E101E1 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB26C201A97359700E101E1 /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,8 @@
 		FDB26C0E1A97124800E101E1 /* CoreImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB26C131A97124800E101E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB26C141A97124800E101E1 /* CoreImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageViewTests.swift; sourceTree = "<group>"; };
-		FDB26C1E1A972CBE00E101E1 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		FDB26C1E1A972CBE00E101E1 /* image222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image222.jpg; sourceTree = "<group>"; };
+		FDB26C201A97359700E101E1 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,8 @@
 		FDB26BFC1A97124800E101E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDB26C1E1A972CBE00E101E1 /* image.jpg */,
+				FDB26C201A97359700E101E1 /* image.png */,
+				FDB26C1E1A972CBE00E101E1 /* image222.jpg */,
 				FDB26BFD1A97124800E101E1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -196,9 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB26C041A97124800E101E1 /* Main.storyboard in Resources */,
+				FDB26C211A97359700E101E1 /* image.png in Resources */,
 				FDB26C091A97124800E101E1 /* LaunchScreen.xib in Resources */,
 				FDB26C061A97124800E101E1 /* Images.xcassets in Resources */,
-				FDB26C1F1A972CBE00E101E1 /* image.jpg in Resources */,
+				FDB26C1F1A972CBE00E101E1 /* image222.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

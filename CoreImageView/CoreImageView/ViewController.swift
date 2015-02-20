@@ -58,7 +58,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //1
-        let fileURL = NSBundle.mainBundle().URLForResource("image", withExtension: "jpg")
+        let fileURL = NSBundle.mainBundle().URLForResource("image", withExtension: "png")
         //2
         beginImage = CIImage(contentsOfURL: fileURL)
         //3
@@ -95,7 +95,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         sepia.setValue(img, forKey: kCIInputImageKey)
         sepia.setValue(intensity, forKey: "inputIntensity")
         //2
-        let random = CIFilter(name:"CIRandomGenrator")
+        let random = CIFilter(name:"CIRandomGenerator")
         
         //3
         let lighten = CIFilter(name:"CIColorControls")
@@ -123,7 +123,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: NSDictionary!) {
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
