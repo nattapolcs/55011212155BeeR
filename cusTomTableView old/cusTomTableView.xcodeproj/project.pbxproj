@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD082DBF1AA9B3B700975ADB /* original_moonlight-wallpaper-01-1024x768.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD082DBE1AA9B3B700975ADB /* original_moonlight-wallpaper-01-1024x768.jpg */; };
-		FD082DC11AA9B43100975ADB /* 2012-09-05-03-09-15-it1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD082DC01AA9B43100975ADB /* 2012-09-05-03-09-15-it1.jpg */; };
 		FD733B661AA04FA70050187B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD733B651AA04FA70050187B /* AppDelegate.swift */; };
 		FD733B6B1AA04FA70050187B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD733B691AA04FA70050187B /* Main.storyboard */; };
 		FD733B6D1AA04FA70050187B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD733B6C1AA04FA70050187B /* Images.xcassets */; };
@@ -34,8 +32,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD082DBE1AA9B3B700975ADB /* original_moonlight-wallpaper-01-1024x768.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "original_moonlight-wallpaper-01-1024x768.jpg"; sourceTree = "<group>"; };
-		FD082DC01AA9B43100975ADB /* 2012-09-05-03-09-15-it1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2012-09-05-03-09-15-it1.jpg"; sourceTree = "<group>"; };
 		FD733B601AA04FA70050187B /* cusTomTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cusTomTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD733B641AA04FA70050187B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD733B651AA04FA70050187B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,8 +106,6 @@
 		FD733B631AA04FA70050187B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD082DC01AA9B43100975ADB /* 2012-09-05-03-09-15-it1.jpg */,
-				FD082DBE1AA9B3B700975ADB /* original_moonlight-wallpaper-01-1024x768.jpg */,
 				FD733B911AA064690050187B /* bb2.png */,
 				FD733B8F1AA05A380050187B /* bb.png */,
 				FD733B641AA04FA70050187B /* Info.plist */,
@@ -220,9 +214,7 @@
 				FD733B901AA05A380050187B /* bb.png in Resources */,
 				FD733B701AA04FA70050187B /* LaunchScreen.xib in Resources */,
 				FD733B6D1AA04FA70050187B /* Images.xcassets in Resources */,
-				FD082DBF1AA9B3B700975ADB /* original_moonlight-wallpaper-01-1024x768.jpg in Resources */,
 				FD733B921AA064690050187B /* bb2.png in Resources */,
-				FD082DC11AA9B43100975ADB /* 2012-09-05-03-09-15-it1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +429,6 @@
 				FD733B811AA04FA70050187B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		FD733B821AA04FA70050187B /* Build configuration list for PBXNativeTarget "cusTomTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -446,7 +437,6 @@
 				FD733B841AA04FA70050187B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
