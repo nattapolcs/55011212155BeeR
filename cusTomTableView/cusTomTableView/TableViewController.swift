@@ -40,11 +40,7 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let message = "You selected \(listData[indexPath.row].balloonName)"
-        let alert = UIAlertController(title: "Your Selection", message: message, preferredStyle: .Alert)
-        let okButton = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        alert.addAction(okButton)
-        self.presentViewController(alert, animated: true, completion: nil)
+      
     }
     
 }

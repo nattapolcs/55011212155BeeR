@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet var tableview : UI!
+    @IBOutlet var tableview : UITableView!
     
     @IBOutlet weak var totalTextField: UITextField!
 

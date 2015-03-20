@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD5B21811AB9573F00A230CE /* 4i9EaL84T.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5B21801AB9573F00A230CE /* 4i9EaL84T.png */; };
+		FD5B21831AB957D600A230CE /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD5B21821AB957D600A230CE /* images.jpg */; };
 		FDA4E5D11A8496B500E9E303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA4E5D01A8496B500E9E303 /* AppDelegate.swift */; };
 		FDA4E5D31A8496B500E9E303 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA4E5D21A8496B500E9E303 /* ViewController.swift */; };
 		FDA4E5D61A8496B500E9E303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA4E5D41A8496B500E9E303 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD5B21801AB9573F00A230CE /* 4i9EaL84T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4i9EaL84T.png; sourceTree = "<group>"; };
+		FD5B21821AB957D600A230CE /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
 		FDA4E5CB1A8496B500E9E303 /* TipCaculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCaculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA4E5CF1A8496B500E9E303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA4E5D01A8496B500E9E303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		FDA4E5CE1A8496B500E9E303 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD5B21821AB957D600A230CE /* images.jpg */,
+				FD5B21801AB9573F00A230CE /* 4i9EaL84T.png */,
 				FDA4E5F21A84B7D000E9E303 /* Navi-Logo.jpg */,
 				FDA4E5CF1A8496B500E9E303 /* Info.plist */,
 			);
@@ -201,7 +207,9 @@
 				FDA4E5F31A84B7D000E9E303 /* Navi-Logo.jpg in Resources */,
 				FDA4E5D61A8496B500E9E303 /* Main.storyboard in Resources */,
 				FDA4E5DB1A8496B500E9E303 /* LaunchScreen.xib in Resources */,
+				FD5B21811AB9573F00A230CE /* 4i9EaL84T.png in Resources */,
 				FDA4E5D81A8496B500E9E303 /* Images.xcassets in Resources */,
+				FD5B21831AB957D600A230CE /* images.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +421,7 @@
 				FDA4E5EC1A8496B500E9E303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDA4E5ED1A8496B500E9E303 /* Build configuration list for PBXNativeTarget "TipCaculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +430,7 @@
 				FDA4E5EF1A8496B500E9E303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
