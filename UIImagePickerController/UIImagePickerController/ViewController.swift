@@ -1,103 +1,81 @@
 //
 //  ViewController.swift
-//  CoreImageView
+//  UIImagePickerController
 //
-//  Created by iStudents on 2/20/15.
+//  Created by iStudents on 4/3/15.
 //  Copyright (c) 2015 iStudents. All rights reserved.
 //
 
 import UIKit
-import AssetsLibrary
 import MobileCoreServices
+import AssetsLibrary
 
 class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate {
 
-    @IBOutlet weak var UImageCiew: UIImageView!
+    var imagePicker: UIImagePickerController!
+    var newMedia: Bool?
+    var context: CIContext!
+    var filter: CIFilter!
+    var beginImage: CIImage!
+    var orientation: UIImageOrientation = .Up
     
     @IBOutlet weak var amountSlider: UISlider!
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     
-    var imagePicker: UIImagePickerController!
-    var newMedia: Bool?
-    
+  
     @IBAction func mountSliderValueChanged(sender: UISlider) {
-        
         let sliderValue = sender.value
         let outputImage = self.oldPhoto(beginImage, withAmount: sliderValue)
         let cgimg = context.createCGImage(outputImage, fromRect: outputImage.extent())
         let newImage = UIImage(CGImage: cgimg, scale: 1, orientation: orientation)
         self.imageView.image = newImage
-        
-        
     }
-    @IBAction func loadPhoto(sender: AnyObject) {
-        let pickerC = UIImagePickerController()
-        pickerC.delegate = self
-        self.presentViewController(pickerC, animated: true, completion: nil)
-    }
-
-    
-    @IBAction func savePhoto(sender: AnyObject) {
-       /* //1
-        let imageToSave = filter.outputImage
-        //2
-        let softwareContext = CIContext(options: [kCIContextUseSoftwareRenderer: true])
-        //3
-        let cgimg = softwareContext.createCGImage(imageToSave, fromRect: imageToSave.extent())
-        //4
-        let library = ALAssetsLibrary()
-        library.writeImageToSavedPhotosAlbum(cgimg, metadata: imageToSave.properties(), completionBlock: nil)*/
-        
+   
+    @IBAction func takePhoto(sender: AnyObject) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .Camera
         imagePicker.mediaTypes = [kUTTypeImage as NSString]
         presentViewController(imagePicker, animated: true, completion: nil)
         
         newMedia = true
-        
+    
     }
     
-    var context: CIContext!
-    var filter: CIFilter!
-    var beginImage: CIImage!
-    var orientation: UIImageOrientation = .Up //new
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
+    @IBAction func libary(sender: AnyObject) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .PhotoLibrary
+        imagePicker.mediaTypes = [kUTTypeImage as NSString]
+        presentViewController(imagePicker, animated: true, completion: nil)
+        newMedia = false
         
-        
-        //let fileURL = NSBundle.mainBundle().URLForResource("image", withExtension: "png")
-        // beginImage = CIImage(contentsOfURL: fileURL)
-        
-        filter = CIFilter(name: "CISepiaTone")
-        filter.setValue(beginImage, forKey: kCIInputImageKey)
-        filter.setValue(0.5, forKey: kCIInputIntensityKey)
-        let outputImage = filter.outputImage
-        context = CIContext(options: nil)
-        
-        println("\(beginImage)")
-        // let cgimg = context.createCGImage(outputImage, fromRect: outputImage.extent())
-        // let newImage = UIImage(CGImage: cgimg)
-        //self.UIImageCiew.image = newImage
-        //self.logAllFilter()
-        
-        
-    }
-    func logAllfilters(){
-        let properties = CIFilter.filterNamesInCategory(kCICategoryBuiltIn)
-        println(properties)
-        
-        for filterName: AnyObject in properties{
-            let fltr = CIFilter(name: filterName as String)
-            println(fltr.attributes())
-        }
     }
 
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        let mediaType = info[UIImagePickerControllerMediaType] as NSString
+        if (mediaType.isEqualToString(kUTTypeImage as NSString)){
+            let image = info[UIImagePickerControllerOriginalImage] as UIImage
+            imageView.image = image
+            if(newMedia == true){
+                UIImageWriteToSavedPhotosAlbum(image, self, "image: didFinishSavingWithError: contexInfo:", nil)
+            }
+        }
+    }
+    
+    func image(image: UIImage, didFinishSavingWithError error:NSErrorPointer, contextInfo:UnsafePointer<Void>){
+        
+        if(error != nil){
+            let alert = UIAlertController(title: "Save Failed", message: "Failed to save image", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let cancelAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+            
+            alert.addAction(cancelAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        
+    }
+    
     func oldPhoto(img: CIImage, withAmount intensity: Float) -> CIImage {
         //1
         let sepia = CIFilter(name:"CISepiaTone")
@@ -127,11 +105,6 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         //7
         return vignette.outputImage
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: NSDictionary!) {
         
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -142,6 +115,29 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         orientation = gotImage.imageOrientation
         filter.setValue(beginImage, forKey: kCIInputImageKey)
         self.mountSliderValueChanged(amountSlider)
+    }
+    func logAllfilters(){
+        let properties = CIFilter.filterNamesInCategory(kCICategoryBuiltIn)
+        println(properties)
+        
+        for filterName: AnyObject in properties{
+            let fltr = CIFilter(name: filterName as String)
+            println(fltr.attributes())
+        }
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
 
