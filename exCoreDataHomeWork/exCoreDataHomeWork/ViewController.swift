@@ -56,14 +56,20 @@ class ViewController: UIViewController {
         
     }
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == UITableViewCellEditingStyle.Delete {
-            /////
-            //items.deleteRowsAtIndexPaths([indexPath],withRowAnimation: UITableViewRowAnimation.Automatic)
-            //items.removeAtIndex([indexPath])
-            /////////
-            items.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-        }
+            if editingStyle == UITableViewCellEditingStyle.Delete {
+                // remove the deleted item from the model
+                let appDel:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+                let context:NSManagedObjectContext = appDel.managedObjectContext!
+                context.deleteObject(items[indexPath.row] as NSManagedObject)
+                items.removeAtIndex(indexPath.row)
+                
+                context.save(nil)
+                
+                //tableView.reloadData()
+                // remove the deleted item from the `UITableView`
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                
+            }
     }
     func saveName(name: String){
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
@@ -113,6 +119,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
 
 }
